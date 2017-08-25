@@ -1,1 +1,10 @@
-Read jpg and display using matplot 
+import os,sys
+import Image
+import matplotlib.pyplot as plt
+
+
+jpgfile = Image.open("image.jpg")
+
+print jpgfile.bits, jpgfile.size, jpgfile.format
+plt.imshow(jpgfile)
+plt.show()
